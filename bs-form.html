@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>bs表单</title>
+	<link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+	<form role="form">
+	<div class="form-group">
+		<label for="name">Name</label>
+		<input type="text" name="" class="form-control" placeholder="please input your name" id="name">
+	</div>
+	<div class="form-group">
+		<label for="inputfile">File</label>
+		<input class="form-control" type="file" name="" id="inputfile">
+		<p class="help-block">块级帮助文本</p>
+	</div>
+	<div class="checkbox">
+		<label>
+			<input type="checkbox" name="" >请打勾
+		</label>
+	</div>
+	<button type="submit" class="btn btn-default">提交</button>
+
+</form>
+</div>
+<div class="container">
+	<!-- 内联表单 -->
+	<form role="form" class="form-inline">
+		<div class="form-group">
+			<label for="name">Name</label>
+			<input type="text" name="" class="form-control" placeholder="please input your name" id="name">
+		</div>
+		<div class="form-group">
+			<label for="inputfile">File</label>
+			<input type="file" name="" id="inputfile">
+			<p class="help-block">块级帮助文本</p>
+		</div>
+		<div class="checkbox">
+			<label>
+				<input type="checkbox" name="">请打勾
+			</label>
+		</div>
+		<button type="submit" class="btn btn-default">提交</button>
+	</form>
+</div>
+<div class="container">
+	<!-- 水平表单 -->
+	<form role="form" class="form-horizontal">
+		<div class="form-group">
+			<label for="name" class="col-sm-2 control-label">Name</label>
+			<div class="col-sm-10">
+				<input type="text" name="" class="form-control" placeholder="please input your name" id="name">
+			</div>
+			
+		</div>
+		<div class="form-group">
+			<label for="inputfile" class="col-sm-2 control-label">File</label>
+			<div class="col-sm-10">
+				<input type="file" name="" id="inputfile">
+				<p class="help-block">块级帮助文本</p>
+			</div>
+			
+		</div>
+		<div class="form-group">
+			<div class="col-sm-offset-2">
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" name="">请打勾
+					</label>
+				</div>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="col-sm-offset-2">
+				<button type="submit" class="btn btn-default">提交</button>
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="name">Textarea</label>
+			<textarea class="form-control" rows="3"></textarea>
+		</div>
+		
+
+	</form>
+</div>
+<!-- 复选框（（Checkbox）和单选框（Radio） -->
+<div class="container">
+	<label for="name">复选框实例</label>
+	<div class="checkbox">
+		<label><input type="checkbox" name=""> 选项1</label>
+	</div>
+	<div class="checkbox">
+		<label><input type="checkbox" name=""> 选项2</label>
+	</div>
+	<div class="checkbox">
+		<label><input type="checkbox" name=""> 选项3</label>
+	</div>
+</div>
+<div class="container">
+	<label for="name">复选框实例</label>
+	<div>
+		<label class="checkbox-inline">
+		<input type="checkbox" name=""> 选项1
+		</label>
+		
+		<label class="checkbox-inline">
+		<input type="checkbox" name=""> 选项2
+		</label>
+		
+		<label class="checkbox-inline">
+		<input type="checkbox" name=""> 选项3
+		</label>
+	</div>	
+</div>
+<div class="container">
+	<label>单选框实例</label>	
+	<div class="radio">
+		<label><input type="radio" name="optionsRadios">选项1</label>
+	</div>
+	<div class="radio">
+		<label><input type="radio" name="optionsRadios">选项2</label>
+	</div>
+	<div class="radio">
+		<label><input type="radio" name="optionsRadios">选项3</label>
+	</div>	
+</div>	
+<div class="container">
+	<label for="name">单选框实例</label>
+	<div>
+		<label class="radio-inline">
+		<input type="radio" name=""> 选项1
+		</label>
+		
+		<label class="radio-inline">
+		<input type="radio" name=""> 选项2
+		</label>
+		
+		<label class="radio-inline">
+		<input type="radio" name=""> 选项3
+		</label>
+	</div>	
+</div>	
+<div class="container">
+	<form role="form">
+		<label for="name">选择列表</label>
+		<select class="form-control">
+			<option value="">1</option>
+			<option value="">2</option>
+			<option value="">3</option>
+			<option value="">4</option>
+			<option value="">5</option>
+		</select>
+	</form>
+</div>
+<div class="container">
+	<form role="form">
+		<label>可多选列表</label>
+		<select multiple="" class="form-control">
+			<option value="">1</option>
+			<option value="">2</option>
+			<option value="">3</option>
+			<option value="">4</option>
+			<option value="">5</option>
+		</select>
+	</form>
+</div>
+<div class="container">
+	<label>静态控件</label>
+	<form class="form-horizontal" role="form">
+		<div class="form-group">
+			<label class="col-sm-2 control-lable">Email</label>
+			<div class="col-sm-10">
+				<p class="form-control-static">eamil@example.com</p>
+			</div>
+		</div>
+		<div class="form-group">
+			<label for="inputPassword" class="col-sm-2 control-lable">Password</label>
+			<div class="col-sm-10">
+				<input type="password" name="" class="form-control" placeholder="please input your password">
+			</div>
+		</div>
+	</form>
+</div>
+<div class="container">
+	<form role="form" class="form-horizontal">
+		<label>表单控件状态</label>
+		<div class="form-group">
+			<label class="col-sm-2 control-lable">focus</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" name="">
+			</div>
+		</div>
+		<div class="form-group">
+			<label class="col-sm-2 control-lable">Disabled</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" name="" placeholder="该输入框禁止输入" disabled>
+			</div>
+		</div>	
+		<div class="form-group">
+			<label class="col-sm-2 control-lable" for="disableTextInput"> 禁用输入（Fieldset disabled）</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" name="" placeholder="该输入框禁止输入" disabled>
+			</div>
+
+		<div class="form-group">
+			<label for="disabledSelect" class="col-sm-2 control-lable">禁用选择菜单</label>
+			<div class="col-sm-10">
+				<select class="form-control">
+					<option value="">1</option>
+					<option value="">2</option>
+					<option value="">3</option>
+					<option value="">4</option>
+					<option value="">5</option>
+				</select>
+			</div>
+		</div>
+		<div class="form-group has-success">
+		    <label class="col-sm-2 control-label" for="inputSuccess">
+		    输入成功
+		    </label>
+		    <div class="col-sm-10">
+		        <input type="text" class="form-control" id="inputSuccess">
+		    </div>
+		   </div>
+		<div class="form-group has-warning">
+			<label class="col-sm-2 control-label" for="inputWarning">
+			输入警告
+			</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" id="inputWarning">
+			</div>
+		</div>
+		
+		<div class="form-group has-error">
+			<label class="col-sm-2 control-label" for="inputError">输入错误</label>
+			<div class="col-sm-10">
+				<input type="text" class="form-control" name="" >
+			</div>
+		</div>
+
+	</form>
+
+	<form role="form">
+		<label>表单控件大小</label>
+		<div class="form-group">
+			<input type="text" name="" class="form-control col-lg-2" placeholder="col-lg-2">
+		</div>
+		<div class="form-group">
+			<input type="text" name="" class="form-control col-lg-3" placeholder="col-lg-3">
+		</div>
+		<div class="form-group">
+			<input type="text" name="" class="form-control col-lg-4" placeholder="col-lg-4">
+		</div>
+		<div class="form-group">
+			<input type="text" name="" class="form-control input-lg" placeholder="input-lg">
+		</div>	
+		<div class="form-group">
+			<input type="text" name="" class="form-control input-sm" placeholder="input-sm">
+		</div>	
+		<div class="form-group">
+			<input type="text" name="" placeholder="默认大小">
+		</div>	
+		<div class="form-group">
+			<select class="form-control">
+				<option>默认大小1</option>
+				<option>默认大小2</option>
+			</select>
+		</div>	
+		<div class="form-group">
+			<select class="form-control input-sm">
+				<option>input-sm</option>
+				<option>input-sm</option>
+			</select>
+		</div>	
+		<div class="form-group">
+			<select class="form-control input-lg">
+				<option>input-lg</option>
+				<option>input-lg</option>
+			</select>
+		</div>	
+	</form>
+
+</div>
+<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+<script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+</body>
+</html>

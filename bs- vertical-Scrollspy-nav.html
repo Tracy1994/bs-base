@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<title>bs垂直监听导航栏</title>
+	<link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css">
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		body {
+		     position: relative;
+		 }
+		 ul.nav-pills {
+		     top: 20px;
+		     position: fixed;
+		 }
+		 div.col-sm-9 div {
+		     height: 450px;
+		     font-size: 28px;
+		 }
+		 #section1 {color: #fff; background-color: #1E88E5;}
+		 #section2 {color: #fff; background-color: #673ab7;}
+		 #section3 {color: #fff; background-color: #ff9800;}
+		 #section4 {color: #fff; background-color: #00bcd4;}
+		 
+		 @media screen and (max-width: 810px) {
+		   #section1, #section2, #section3, #section41, #section4  {
+		       margin-left: 150px;
+		   }
+		 }
+	</style>
+</head>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="20">
+
+  <div class="container">
+    <div class="row">
+      <nav class="col-sm-3" id="myScrollspy">
+        <ul class="nav nav-pills nav-stacked">
+          <li><a href="#section1">Section 1</a></li>
+          <li><a href="#section2">Section 2</a></li>
+          <li><a href="#section3">Section 3</a></li>
+          <li><a href="#section4">Section 4</a></li>
+        </ul>
+      </nav>
+      <div class="col-sm-9">
+        <div id="section1"> 
+          <h1>Section 1</h1>
+          <p>Try to scroll this page and look at the navigation list while scrolling!</p>
+        </div> 
+        <div id="section2"> 
+          <h1>Section 2</h1>
+          <p>Try to scroll this page and look at the navigation list while scrolling!</p>
+        </div>
+        <div id="section3"> 
+          <h1>Section 3</h1>
+          <p>Try to scroll this page and look at the navigation list while scrolling!</p>
+        </div>
+        <div id="section4"> 
+          <h1>Section 4</h1>
+          <p>Try to scroll this page and look at the navigation list while scrolling!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

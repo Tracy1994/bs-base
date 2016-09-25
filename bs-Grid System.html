@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>bs网格系统</title>
+	<link href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet">
+	<style type="text/css">
+		[class *= col-]{
+  		background-color: #eee;
+ 		border: 1px solid #ccc;
+		}
+	</style>
+</head>
+<body>
+<!-- 中型设备台式电脑-md/col-md-offset偏移 -->
+<div class="container">
+	<div class="row">
+		<div class="col-md-4">col-md-4</div>
+		<div class="col-md-8">col-md-8</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">col-md-4</div>
+		<div class="col-md-4">col-md-4</div>
+		<div class="col-md-4">col-md-4</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3">col-md-3</div>
+		<div class="col-md-6">col-md-6</div>
+		<div class="col-md-3">col-md-3</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3">col-md-3</div>
+		
+		<div class="col-md-3 col-md-offset-6">col-md-3 col-md-offset-6</div>
+	</div>
+</div>
+<hr>
+	<!-- 超小设备手机（<768px）-xs 嵌套列 -->
+	<div class="container">
+	<div class="row">
+		<div class="col-xs-4">col-xs-4</div>
+		<div class="col-xs-8">col-xs-8</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-4">col-xs-4</div>
+		<div class="col-xs-4">col-xs-4</div>
+		<div class="col-xs-4">col-xs-4</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-3">col-xs-3</div>
+		<div class="col-xs-6">col-xs-6</div>
+		<div class="col-xs-3">
+			col-xs-3
+			<div class="row">
+				<div class="col-xs-3">col-xs-3</div>
+				<div class="col-xs-6">col-xs-6</div>
+				<div class="col-xs-3">col-xs-3</div>
+			</div>
+		</div>
+	</div>
+</div>
+<hr>
+	<!-- 小型设备平板电脑（≥768px）-sm/列排序push/pull -->
+	<div class="container">
+	<div class="row">
+		<div class="col-sm-4">col-sm-4</div>
+		<div class="col-sm-8">col-sm-8</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4">col-sm-4</div>
+		<div class="col-sm-4">col-sm-4</div>
+		<div class="col-sm-4">col-sm-4</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-3">col-sm-3</div>
+		<div class="col-sm-6">col-sm-6</div>
+		<div class="col-sm-3">col-sm-3</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4 col-sm-push-8">col-sm-4 col-sm-push-8 should be on the left</div>
+		<div class="col-sm-8 col-sm-pull-4">col-sm-8 col-sm-pull-4 should be on the right</div>
+	</div>
+</div>
+<hr>
+	<!-- 大型设备台式电脑（≥1200px）-lg -->
+	<div class="container">
+	<div class="row">
+		<div class="col-lg-4">col-lg-4</div>
+		<div class="col-lg-8">col-lg-8</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-4">col-lg-4</div>
+		<div class="col-lg-4">col-lg-4</div>
+		<div class="col-lg-4">col-lg-4</div>
+	</div>
+	<div class="row">
+		<div class="col-lg-3">col-lg-3</div>
+		<div class="col-lg-6">col-lg-6</div>
+		<div class="col-lg-3">col-lg-3</div>
+	</div>
+</div>
+</body>
+</html>

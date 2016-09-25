@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<title>bs提示工具</title>
+	<style type="text/css">
+		a{
+			display: block;
+			margin: 30px;
+			float: left;
+		}
+	</style>
+	<link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+	<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+	<script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>	
+</head>
+<body>
+<div class="btn-toolbar">
+<a href="#" class="tooltip-test" data-toggle="tooltip" title="默认Tooltip">默认Tooltip</a>
+<a href="#" class="tooltip-show" data-toggle="tooltip show" data-placement="left" title="左侧Tooltip">左侧Tooltip 方法 show</a>
+<a href="#" class="tooltip-test" data-toggle="tooltip" data-placement="top" title="顶部Tooltip">顶部Tooltip</a>
+<a href="#" class="tooltip-test" data-toggle="tooltip" data-placement="bottom" title="底部Tooltip">底部Tooltip</a>
+<a href="#" class="tooltip-test" data-toggle="tooltip" data-placement="right" title="右侧Tooltip">右侧Tooltip</a>
+<button type="button" class="btn btn-default" data-toggle="tooltip" title="默认Tooltip">默认Tooltip</button>
+<button type="button" class="btn btn-default" data-toggle="tooltip" data-placement="left" title="左侧Tooltip">左侧Tooltip</button>
+
+<script>
+   $(function () { $("[data-toggle='tooltip']").tooltip(); });
+   $(function () { $('.tooltip-show').tooltip('show');});
+</script>
+</body>
+</html>

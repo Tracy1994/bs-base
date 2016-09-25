@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+	<title>bs弹出框</title>
+	<style type="text/css">
+		.container{
+			margin: 100px;
+		}
+	</style>
+	<link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css">
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container">
+	<button type="button" class="btn btn-default" title="Popover title"  data-container="body" data-toggle="popover" data-placement="left" data-content="左侧的 Popover 中的一些内容">左侧的 Popover</button>
+	<button type="button" class="btn btn-default" title="Popover title"  data-container="body" data-toggle="popover" data-placement="top" data-content="点半的 Popover 中的一些内容">顶部的 Popover</button>
+	<button type="button" class="btn btn-default" title="Popover title"  data-container="body" data-toggle="popover" data-placement="bottom" data-content="底部的 Popover 中的一些内容">底部的 Popover</button>
+	<button type="button" class="btn btn-default" title="Popover title"  data-container="body" data-toggle="popover" data-placement="right" data-content="右侧的 Popover 中的一些内容">右侧的 Popover</button>
+</div>
+<div class="container">
+	<button type="button" class="btn btn-default" title="Popover title"  data-container="body" data-toggle="popover" data-placement="left" data-content="左侧的 Popover 中的一些内容">左侧的 Popover</button>
+	<button type="button" class="btn btn-default popover-show" title="Popover title"  data-container="body" data-toggle="popover" data-placement="top" data-content="点半的 Popover 中的一些内容—— show 方法">顶部的 Popover</button>
+	<button type="button" class="btn btn-default popover-hide" title="Popover title"  data-container="body" data-toggle="popover" data-placement="bottom" data-content="底部的 Popover 中的一些内容 popover-hide">底部的 Popover</button>
+	<button type="button" class="btn btn-default  popover-destroy" title="Popover title"  data-container="body" data-toggle="popover" data-placement="right" data-content="右侧的 Popover 中的一些内容  popover-destroy">右侧的 Popover</button>
+	<button type="button" class="btn btn-default  popopover-toggle" title="Popover title"  data-container="body" data-toggle="popover" data-placement="right" data-content="右侧的 Popover 中的一些内容  popover-toggle">右侧的 Popover</button>
+</div>
+<script>$(function () 
+	{ $("[data-toggle='popover']").popover();
+	});
+	$(function () { $('.popover-show').popover('show');});
+    $(function () { $('.popover-hide').popover('hide');});
+    $(function () { $('.popover-destroy').popover('destroy');});
+    $(function () { $('.popover-toggle').popover('toggle');});
+    
+</script>
+</body>
+</html>
